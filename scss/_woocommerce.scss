@@ -1,0 +1,251 @@
+.grid.row {
+	margin-right: -5px;
+	margin-left: -5px;
+	.col-sm-4,
+	.col-xs-6 {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+.hidden {
+	display: none;
+}
+.slt-woo-grid {
+	.widget-title {
+		padding: 0;
+		margin-bottom: 10px;
+		background: transparent;
+		position: relative;
+		overflow: hidden;
+		&:after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 1px;
+			background: $color;
+			bottom: 0;
+			left: 0;
+		}
+		h2 {
+			display: inline-block;
+			line-height: 100%;
+			background: $color;
+			padding: 8px 15px !important;
+			min-width: 200px;
+			position: relative;
+			&:after {
+				content: '';
+				border-color: transparent transparent $color transparent;
+				border-style: solid;
+			  border-width: 30px 30px 45px 0;
+				height: 0px;
+				width: 0px;
+				position: absolute;
+				right: -20px;
+				bottom: 0;
+			}
+			&:before {
+				content: '';
+				width: 2px;
+				height: 50px;
+				background: #009531;
+				transform: rotate(-34deg);
+				position: absolute;
+				right: -10px;
+				bottom: -4px;
+			}
+			a {
+				color: #fff;
+				font-size: 12px;
+				text-decoration: 	none;
+				&:hover {
+					color: #222;
+				}
+			}
+		}
+	}
+	.item-wrap {
+		border: 1px solid #eaeaea;
+		margin-bottom: 15px;
+		background: #fff;
+	}
+	.product-details {
+		border-top: 1px solid #eaeaea;
+		padding: 10px;
+		text-align: center;
+		.product-name {
+			margin-bottom: 10px;
+			min-height: 63px;
+		}
+		.price {
+			font-weight: bold;
+			color: #6a3c12;
+			font-size: 13px;
+		}
+	}
+}
+.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid > li {
+    margin-bottom: 15px !important;
+}
+.widget.woo-grid-default {
+	margin-bottom: 5px;
+}
+a.view-more {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -8px;
+	font-size: 10px;
+	color: $color;
+	text-transform: none;
+}
+.woocommerce-breadcrumb {
+	padding: 10px 0px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 15px;
+	a {
+		&:first-child {
+			&:before {
+				content: "\f015";
+				font-family: "FontAwesome";
+				margin-right: 5px;
+			}
+		}
+	}
+
+}
+
+//Product detail
+.single-product {
+	h1.product_title {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.images {
+		border: 1px solid #eaeaea;
+		padding: 3px;
+			> a {
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+	}
+	.group-price {
+		font-size: 22px;
+		margin-bottom: 20px;
+		.price {
+			display: inline-block;
+			color: #FF0000;
+		}
+	}
+	.product_meta {
+		margin-top: 20px;
+	}
+}
+.producttabs-detail {
+	margin-top: 20px;
+	.nav-tabs {
+		border-top: 1px solid #eaeaea;
+		border-bottom: 1px solid #eaeaea;
+		border-left: 1px solid #eaeaea;
+		li {
+			display: inline-block;
+			float: left;
+			margin-left: 0 !important;
+			border: none;
+			border-left: 1px solid #eaeaea;
+			border-right: 1px solid #eaeaea;
+			&:first-child {
+				border: none;
+			}
+			a {
+				border: none !important;
+				font-size: 14px;
+				font-weight: bold;
+				text-transform: uppercase;
+				padding: 9px 30px;
+			}
+			&.active {
+				background: #fff;
+				a {
+					color: #4C9F35;
+				}
+			}
+		}
+	}
+	.tab-content {
+		padding: 20px 15px;
+		border-left: 1px solid #eaeaea;
+	}
+}
+
+//Category Product
+.archive {
+	.page-title {
+		font-size: 22px;
+		margin-bottom: 15px;
+		clear: both;
+	}
+	.woocommerce-ordering {
+		display: inline-block;
+		float: right;
+		margin-right: 5px;
+	}
+	.woocommerce-result-count {
+		float: left;
+		margin-left: 5px;
+		padding-top: 10px;
+	}
+	.slt-woo-grid {
+		margin-top: 20px;
+		&:before{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+	.woocommerce-pagination {
+		text-align: center;
+		border-top: 1px solid #eaeaea;
+		border-bottom: 1px solid #eaeaea;
+		padding: 4px 0;
+		.page-numbers {
+			display: inline-block;
+			vertical-align: top;
+			li {
+				float: left;
+				span,a {
+					padding: 6px 14px;
+					&.current {
+						background: #4C9F35;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+.slt_post_category {
+	#sidebar & {
+		.content-widget {
+			margin-left: -5px;
+			margin-right: -5px;
+			margin-top: 10px;
+			.media {
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #eaeaea;
+				&:last-child {
+					margin-bottom: 0;
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
